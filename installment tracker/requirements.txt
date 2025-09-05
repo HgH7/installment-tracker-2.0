@@ -1,0 +1,8 @@
+customtkinter==5.2.1
+Pillow==10.2.0
+pandas==2.2.0
+selenium==4.18.1
+webdriver_manager==4.0.1
+arabic-reshaper==3.0.0
+python-bidi==0.4.2
+

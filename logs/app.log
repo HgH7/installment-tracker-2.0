@@ -1,0 +1,406 @@
+2025-09-03 02:50:12,950 - INFO - installments tracker.py:232 - Created base directory: /Users/hassan/Desktop/programing/trying python/customer_files
+2025-09-03 02:50:12,951 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 02:50:13,337 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 02:50:13,337 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 02:50:13,338 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 02:50:13,338 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 02:50:13,339 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 02:50:13,339 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 02:50:13,339 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 02:50:13,339 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 02:50:13,339 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 02:50:13,339 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 02:50:13,347 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 02:50:13,370 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 02:50:13,373 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 02:50:13,375 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 02:50:13,378 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 02:50:13,379 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 02:50:13,379 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 02:50:13,379 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 02:50:13,379 - INFO - installments tracker.py:3343 - No customer data found for notifications
+2025-09-03 02:50:13,379 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 03:27:00,748 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 03:27:00,942 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 03:27:00,942 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 03:27:00,943 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 03:27:00,943 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 03:27:00,944 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 03:27:00,944 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 03:27:00,944 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 03:27:00,944 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 03:27:00,944 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 03:27:00,944 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 03:27:00,951 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 03:27:00,976 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 03:27:00,980 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 03:27:00,981 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 03:27:00,984 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 03:27:00,986 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 03:27:00,986 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 03:27:00,986 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 03:27:00,986 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 03:27:00,987 - INFO - installments tracker.py:3343 - No customer data found for notifications
+2025-09-03 03:31:12,982 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_033112.csv
+2025-09-03 03:31:54,415 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_033154.csv
+2025-09-03 03:31:57,421 - INFO - installments tracker.py:3265 - Manual notification sent to حسن السيد at +201120530157
+2025-09-03 03:33:32,062 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_033332.csv
+2025-09-03 03:33:35,671 - INFO - installments tracker.py:3265 - Manual notification sent to حسن السيد at +201120530157
+2025-09-03 03:34:04,729 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_033404.csv
+2025-09-03 04:57:44,083 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 04:57:44,378 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 04:57:44,378 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 04:57:44,379 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 04:57:44,379 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 04:57:44,380 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 04:57:44,380 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 04:57:44,380 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 04:57:44,380 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 04:57:44,381 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 04:57:44,381 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 04:57:44,386 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 04:57:44,408 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 04:57:44,412 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 04:57:44,414 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 04:57:44,417 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 04:57:44,418 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 04:57:44,418 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 04:57:44,418 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 04:57:44,418 - INFO - installments tracker.py:3356 - Checking notifications for 1 customers
+2025-09-03 04:57:44,418 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 04:57:44,418 - INFO - installments tracker.py:3461 - Notification check completed. Success: 0, Failed: 0, Skipped: 0
+2025-09-03 04:59:43,241 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 04:59:43,434 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 04:59:43,434 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 04:59:43,434 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 04:59:43,434 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 04:59:43,435 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 04:59:43,435 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 04:59:43,435 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 04:59:43,435 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 04:59:43,435 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 04:59:43,435 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 04:59:43,441 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 04:59:43,462 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 04:59:43,465 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 04:59:43,466 - ERROR - installments tracker.py:2465 - Error loading installments data: '[' was never closed (<string>, line 1)
+2025-09-03 04:59:45,720 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 04:59:45,732 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 04:59:45,737 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 04:59:45,738 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 04:59:45,738 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 04:59:45,738 - INFO - installments tracker.py:3356 - Checking notifications for 2 customers
+2025-09-03 04:59:45,738 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 04:59:45,738 - INFO - installments tracker.py:3461 - Notification check completed. Success: 0, Failed: 0, Skipped: 0
+2025-09-03 05:00:26,491 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 05:00:26,648 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 05:00:26,648 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 05:00:26,648 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 05:00:26,648 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 05:00:26,649 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 05:00:26,649 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 05:00:26,649 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 05:00:26,649 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 05:00:26,649 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 05:00:26,649 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 05:00:26,655 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 05:00:26,675 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 05:00:26,678 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 05:00:26,679 - ERROR - installments tracker.py:2465 - Error loading installments data: '[' was never closed (<string>, line 1)
+2025-09-03 05:00:28,172 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 05:00:28,180 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 05:00:28,184 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 05:00:28,184 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 05:00:28,184 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 05:00:28,184 - INFO - installments tracker.py:3356 - Checking notifications for 2 customers
+2025-09-03 05:00:28,184 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 05:00:28,184 - INFO - installments tracker.py:3461 - Notification check completed. Success: 0, Failed: 0, Skipped: 0
+2025-09-03 05:01:05,924 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 05:01:06,077 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 05:01:06,078 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 05:01:06,078 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 05:01:06,078 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 05:01:06,079 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 05:01:06,079 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 05:01:06,079 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 05:01:06,079 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 05:01:06,079 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 05:01:06,079 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 05:01:06,085 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 05:01:06,105 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 05:01:06,108 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 05:01:06,109 - ERROR - installments tracker.py:2465 - Error loading installments data: '[' was never closed (<string>, line 1)
+2025-09-03 05:01:07,541 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 05:01:07,554 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 05:01:07,559 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 05:01:07,559 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 05:01:07,559 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 05:01:07,559 - INFO - installments tracker.py:3356 - Checking notifications for 2 customers
+2025-09-03 05:01:07,559 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 05:01:07,560 - INFO - installments tracker.py:3461 - Notification check completed. Success: 0, Failed: 0, Skipped: 0
+2025-09-03 05:01:26,329 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 05:01:26,485 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 05:01:26,485 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 05:01:26,485 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 05:01:26,485 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 05:01:26,486 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 05:01:26,486 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 05:01:26,486 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 05:01:26,487 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 05:01:26,487 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 05:01:26,487 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 05:01:26,492 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 05:01:26,515 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 05:01:26,518 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 05:01:26,520 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 05:01:26,523 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 05:01:26,524 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 05:01:26,524 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 05:01:26,524 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 05:01:26,525 - INFO - installments tracker.py:3343 - No customer data found for notifications
+2025-09-03 05:01:26,525 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 05:02:45,736 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_050245.csv
+2025-09-03 05:03:46,971 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_050346.csv
+2025-09-03 05:04:47,915 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_050447.csv
+2025-09-03 05:04:59,733 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_050459.csv
+2025-09-03 05:07:04,353 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_050704.csv
+2025-09-03 05:07:22,687 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_050722.csv
+2025-09-03 05:08:01,106 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_050801.csv
+2025-09-03 05:09:13,190 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_050913.csv
+2025-09-03 05:10:16,714 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_051016.csv
+2025-09-03 05:13:42,748 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_051342.csv
+2025-09-03 05:15:51,315 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_051551.csv
+2025-09-03 05:19:14,088 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_051914.csv
+2025-09-03 05:19:32,887 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_051932.csv
+2025-09-03 05:19:39,400 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_051939.csv
+2025-09-03 05:24:28,688 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_052428.csv
+2025-09-03 05:25:05,671 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_052505.csv
+2025-09-03 05:26:27,371 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_052627.csv
+2025-09-03 05:29:29,641 - WARNING - installments tracker.py:840 - Installment date 2025-07-28 not found for customer فيصل مهاوش
+2025-09-03 05:29:33,909 - WARNING - installments tracker.py:840 - Installment date 2025-07-28 not found for customer فيصل مهاوش
+2025-09-03 05:33:27,813 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 05:33:28,005 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 05:33:28,005 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 05:33:28,005 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 05:33:28,005 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 05:33:28,006 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 05:33:28,006 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 05:33:28,006 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 05:33:28,006 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 05:33:28,006 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 05:33:28,006 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 05:33:28,011 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 05:33:28,035 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 05:33:28,038 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 05:33:28,040 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 05:33:28,043 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 05:33:28,044 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 05:33:28,045 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 05:33:28,045 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 05:33:28,045 - INFO - installments tracker.py:3356 - Checking notifications for 6 customers
+2025-09-03 05:33:28,045 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 05:33:28,045 - INFO - installments tracker.py:3461 - Notification check completed. Success: 0, Failed: 0, Skipped: 0
+2025-09-03 05:42:22,714 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 05:42:22,870 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 05:42:22,870 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 05:42:22,870 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 05:42:22,870 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 05:42:22,871 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 05:42:22,871 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 05:42:22,871 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 05:42:22,871 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 05:42:22,871 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 05:42:22,872 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 05:42:22,877 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 05:42:22,897 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 05:42:22,900 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 05:42:22,902 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 05:42:22,905 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 05:42:22,907 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 05:42:22,907 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 05:42:22,907 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 05:42:22,907 - INFO - installments tracker.py:3356 - Checking notifications for 6 customers
+2025-09-03 05:42:22,907 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 05:42:22,907 - INFO - installments tracker.py:3461 - Notification check completed. Success: 0, Failed: 0, Skipped: 0
+2025-09-03 05:42:59,241 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_054259.csv
+2025-09-03 05:44:02,758 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_054402.csv
+2025-09-03 05:45:18,274 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_054518.csv
+2025-09-03 05:46:54,893 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_054654.csv
+2025-09-03 05:48:18,864 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_054818.csv
+2025-09-03 05:51:53,089 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_055153.csv
+2025-09-03 05:52:07,222 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_055207.csv
+2025-09-03 05:53:44,007 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_055344.csv
+2025-09-03 05:54:45,682 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_055445.csv
+2025-09-03 05:55:11,276 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_055511.csv
+2025-09-03 05:56:09,141 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_055609.csv
+2025-09-03 05:56:29,607 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_055629.csv
+2025-09-03 05:56:34,942 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_055634.csv
+2025-09-03 05:56:42,458 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_055642.csv
+2025-09-03 05:56:47,258 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_055647.csv
+2025-09-03 05:59:34,958 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_055934.csv
+2025-09-03 06:00:18,393 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_060018.csv
+2025-09-03 06:00:56,776 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_060056.csv
+2025-09-03 06:01:41,127 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_060141.csv
+2025-09-03 06:03:05,146 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_060305.csv
+2025-09-03 06:04:10,711 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_060410.csv
+2025-09-03 06:04:32,011 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_060432.csv
+2025-09-03 06:07:09,811 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_060709.csv
+2025-09-03 06:07:43,894 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_060743.csv
+2025-09-03 06:07:54,878 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_060754.csv
+2025-09-03 15:10:37,789 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 15:10:38,036 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 15:10:38,036 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 15:10:38,036 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 15:10:38,036 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 15:10:38,037 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 15:10:38,037 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 15:10:38,038 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 15:10:38,038 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 15:10:38,038 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 15:10:38,038 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 15:10:38,045 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 15:10:38,066 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 15:10:38,070 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 15:10:38,072 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 15:10:38,075 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 15:10:38,077 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 15:10:38,077 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 15:10:38,077 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 15:10:38,077 - INFO - installments tracker.py:3356 - Checking notifications for 11 customers
+2025-09-03 15:10:38,077 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 15:10:38,077 - INFO - installments tracker.py:3461 - Notification check completed. Success: 0, Failed: 0, Skipped: 0
+2025-09-03 15:12:32,704 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_151232.csv
+2025-09-03 15:12:56,653 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_151256.csv
+2025-09-03 15:13:02,520 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_151302.csv
+2025-09-03 15:13:08,037 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_151308.csv
+2025-09-03 15:15:04,553 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_151504.csv
+2025-09-03 15:15:22,536 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_151522.csv
+2025-09-03 15:15:28,136 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_151528.csv
+2025-09-03 15:15:34,969 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_151534.csv
+2025-09-03 15:15:48,220 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_151548.csv
+2025-09-03 15:17:43,220 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_151743.csv
+2025-09-03 15:19:30,253 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_151930.csv
+2025-09-03 15:19:35,254 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_151935.csv
+2025-09-03 15:20:27,553 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_152027.csv
+2025-09-03 15:21:29,503 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_152129.csv
+2025-09-03 15:26:23,195 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 15:26:23,346 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 15:26:23,346 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 15:26:23,346 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 15:26:23,346 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 15:26:23,347 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 15:26:23,347 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 15:26:23,347 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 15:26:23,347 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 15:26:23,347 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 15:26:23,347 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 15:26:23,353 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 15:26:23,376 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 15:26:23,379 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 15:26:23,382 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 15:26:23,385 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 15:26:23,387 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 15:26:23,387 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 15:26:23,387 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 15:26:23,387 - INFO - installments tracker.py:3356 - Checking notifications for 16 customers
+2025-09-03 15:26:23,387 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 15:26:23,387 - INFO - installments tracker.py:3461 - Notification check completed. Success: 0, Failed: 0, Skipped: 0
+2025-09-03 17:56:02,526 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 17:56:02,688 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 17:56:02,688 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 17:56:02,688 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 17:56:02,688 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 17:56:02,690 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 17:56:02,690 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 17:56:02,690 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 17:56:02,690 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 17:56:02,690 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 17:56:02,690 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 17:56:02,696 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 17:56:02,719 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 17:56:02,723 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 17:56:02,726 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 17:56:02,729 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 17:56:02,731 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 17:56:02,731 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 17:56:02,731 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 17:56:02,731 - INFO - installments tracker.py:3356 - Checking notifications for 18 customers
+2025-09-03 17:56:02,731 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 17:56:02,732 - INFO - installments tracker.py:3461 - Notification check completed. Success: 0, Failed: 0, Skipped: 0
+2025-09-03 17:58:12,281 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_175812.csv
+2025-09-03 18:00:25,679 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_180025.csv
+2025-09-03 18:01:24,945 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_180124.csv
+2025-09-03 18:02:03,244 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_180203.csv
+2025-09-03 18:03:03,278 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_180303.csv
+2025-09-03 18:04:10,128 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_180410.csv
+2025-09-03 23:18:51,266 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-03 23:18:51,705 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-03 23:18:51,705 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-03 23:18:51,705 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-03 23:18:51,705 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-03 23:18:51,706 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-03 23:18:51,706 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-03 23:18:51,706 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-03 23:18:51,707 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-03 23:18:51,707 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-03 23:18:51,707 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-03 23:18:51,715 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-03 23:18:51,738 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-03 23:18:51,742 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-03 23:18:51,745 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-03 23:18:51,748 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-03 23:18:51,750 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-03 23:18:51,750 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-03 23:18:51,750 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-03 23:18:51,750 - INFO - installments tracker.py:3356 - Checking notifications for 24 customers
+2025-09-03 23:18:51,750 - INFO - installments tracker.py:396 - Application starting...
+2025-09-03 23:18:51,751 - INFO - installments tracker.py:3461 - Notification check completed. Success: 0, Failed: 0, Skipped: 0
+2025-09-03 23:20:14,608 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232014.csv
+2025-09-03 23:21:07,152 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232107.csv
+2025-09-03 23:22:16,570 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232216.csv
+2025-09-03 23:24:34,985 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232434.csv
+2025-09-03 23:25:12,435 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232512.csv
+2025-09-03 23:26:09,917 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232609.csv
+2025-09-03 23:26:27,867 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232627.csv
+2025-09-03 23:26:29,684 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232629.csv
+2025-09-03 23:27:34,278 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232734.csv
+2025-09-03 23:27:58,501 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232758.csv
+2025-09-03 23:28:00,184 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232800.csv
+2025-09-03 23:28:58,470 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232858.csv
+2025-09-03 23:29:52,403 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250903_232952.csv
+2025-09-05 22:26:08,208 - INFO - installments tracker.py:356 - Starting application initialization...
+2025-09-05 22:26:08,559 - INFO - installments tracker.py:369 - Appearance mode set successfully
+2025-09-05 22:26:08,559 - INFO - installments tracker.py:381 - Window centered successfully
+2025-09-05 22:26:08,560 - INFO - installments tracker.py:135 - Theme setup completed successfully
+2025-09-05 22:26:08,560 - INFO - installments tracker.py:3886 - Theme setup completed
+2025-09-05 22:26:08,561 - INFO - installments tracker.py:3909 - Created frame: home
+2025-09-05 22:26:08,561 - INFO - installments tracker.py:3909 - Created frame: add
+2025-09-05 22:26:08,561 - INFO - installments tracker.py:3909 - Created frame: view
+2025-09-05 22:26:08,561 - INFO - installments tracker.py:3909 - Created frame: manage
+2025-09-05 22:26:08,561 - INFO - installments tracker.py:3909 - Created frame: backup_restore
+2025-09-05 22:26:08,561 - INFO - installments tracker.py:3909 - Created frame: send_notification
+2025-09-05 22:26:08,568 - INFO - installments tracker.py:3929 - setup_home_page completed successfully
+2025-09-05 22:26:08,591 - INFO - installments tracker.py:3929 - setup_add_page completed successfully
+2025-09-05 22:26:08,595 - INFO - installments tracker.py:3929 - setup_view_page completed successfully
+2025-09-05 22:26:08,598 - INFO - installments tracker.py:3929 - setup_manage_installments_page completed successfully
+2025-09-05 22:26:08,601 - INFO - installments tracker.py:3929 - setup_backup_restore_page completed successfully
+2025-09-05 22:26:08,603 - INFO - installments tracker.py:3929 - setup_send_notification_page completed successfully
+2025-09-05 22:26:08,603 - INFO - installments tracker.py:3338 - Starting automatic installment check
+2025-09-05 22:26:08,603 - INFO - installments tracker.py:3473 - Notification thread started
+2025-09-05 22:26:08,603 - INFO - installments tracker.py:3356 - Checking notifications for 27 customers
+2025-09-05 22:26:08,603 - INFO - installments tracker.py:396 - Application starting...
+2025-09-05 22:26:08,604 - INFO - installments tracker.py:3461 - Notification check completed. Success: 0, Failed: 0, Skipped: 0
+2025-09-05 22:27:46,387 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_222746.csv
+2025-09-05 22:29:26,131 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_222926.csv
+2025-09-05 22:30:07,014 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_223007.csv
+2025-09-05 22:30:16,264 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_223016.csv
+2025-09-05 22:30:21,530 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_223021.csv
+2025-09-05 22:30:34,514 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_223034.csv
+2025-09-05 22:32:34,610 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_223234.csv
+2025-09-05 22:32:54,530 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_223254.csv
+2025-09-05 22:35:06,146 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_223506.csv
+2025-09-05 22:36:42,244 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_223642.csv
+2025-09-05 22:37:13,045 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_223713.csv
+2025-09-05 22:37:14,495 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_223714.csv
+2025-09-05 22:37:43,496 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_223743.csv
+2025-09-05 22:37:45,379 - INFO - installments tracker.py:715 - Backup created: backups/backup_20250905_223745.csv

@@ -1,0 +1,19 @@
+---
+description: |
+  Follow these rules for all edits in this project:
+
+  DO:
+    - Only edit code in the functions I mention
+    - Add new logic in separate functions or files
+    - Explain changes with comments
+    -read /Users/hassan/Installment tracker/installment tracker/installments_tracker_summary.json to know the project details well
+
+  DO NOT:
+    - Touch the UI layout or CTk frames unless asked
+    - Modify CSV reading/saving unless requested
+    - Rename or remove any existing functions or variables
+
+globs:
+  - "**/*.py"
+alwaysApply: true
+

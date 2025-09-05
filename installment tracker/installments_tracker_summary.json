@@ -1,0 +1,594 @@
+ {
+  "file": "installments tracker.py",
+  "description": "A desktop GUI (CustomTkinter/Tkinter) application for managing customer installments. It lets users add/edit customers, compute and track installment schedules, mark installments as paid/unpaid, view payment history, export data to Excel, back up and restore CSV data, attach per-customer files, and send WhatsApp reminders (manual and automated). Data persistence uses a CSV file with optional backups; a background thread periodically sends notifications for upcoming installments.",
+  "functions": [
+    {
+      "name": "initialize_app",
+      "description": "Creates and configures the main CTk window, sets geometry/title/appearance, centers the window, and returns the app instance.",
+      "parameters": [],
+      "returns": "CTk application window instance"
+    },
+    {
+      "name": "main",
+      "description": "Starts the Tk mainloop for the application with error handling.",
+      "parameters": [],
+      "returns": "None"
+    },
+    {
+      "name": "show_frame",
+      "description": "Shows the specified frame and hides others managed in the global frames registry.",
+      "parameters": ["frame"],
+      "returns": "None"
+    },
+    {
+      "name": "refresh_treeview",
+      "description": "Clears and reloads a ttk.Treeview with customer data, adding a visual paid/unpaid status column if present.",
+      "parameters": ["tree", "data"],
+      "returns": "None"
+    },
+    {
+      "name": "read_csv_safely",
+      "description": "Wrapper that reads all customer data via CSVManager.",
+      "parameters": [],
+      "returns": "List of customer dicts"
+    },
+    {
+      "name": "save_to_csv_and_excel",
+      "description": "Wrapper that saves the given data via CSVManager.",
+      "parameters": ["data"],
+      "returns": "True if saved successfully, else False"
+    },
+    {
+      "name": "validate_and_save",
+      "description": "Validates input fields, computes installment schedule and values, creates a new customer record, optionally saves attached files, and clears the form.",
+      "parameters": ["name_entry", "phone_entry", "amount_entry", "installments_entry", "start_date_entry", "file_list"],
+      "returns": "True on success, else False"
+    },
+    {
+      "name": "show_payment_history",
+      "description": "Opens a modal window showing a selected customer's installment dates, amounts, and paid status, with actions to mark as paid or edit a specific installment.",
+      "parameters": [],
+      "returns": "None",
+      "callbacks": [
+        {
+          "name": "mark_as_paid",
+          "description": "Handles double-click in the history tree to mark an unpaid installment as paid and update the row.",
+          "parameters": ["event"],
+          "returns": "None"
+        },
+        {
+          "name": "edit_installment",
+          "description": "Handles right-click to open an edit modal with date/value/paid toggle and nested date picker; validates and updates CSV.",
+          "parameters": ["event"],
+          "returns": "None",
+          "children": [
+            {
+              "name": "open_date_picker",
+              "description": "Opens DatePicker modal to set the date field.",
+              "parameters": [],
+              "returns": "None"
+            },
+            {
+              "name": "save_changes",
+              "description": "Validates date/amount, updates installment date/value, syncs paid status, refreshes the history view.",
+              "parameters": [],
+              "returns": "None"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "export_to_excel",
+      "description": "Exports customer data to a formatted Excel file using pandas/xlsxwriter and attempts to open it.",
+      "parameters": [],
+      "returns": "None"
+    },
+    {
+      "name": "setup_add_page",
+      "description": "Builds the 'Add Customer' page UI (form fields, date picker, file attachments, save/back buttons).",
+      "parameters": [],
+      "returns": "None",
+      "callbacks": [
+        {
+          "name": "add_files",
+          "description": "Opens a file dialog, appends selected files to an internal list, and renders filenames in a read-only textbox.",
+          "parameters": [],
+          "returns": "None"
+        },
+        {
+          "name": "clear_files",
+          "description": "Confirms and clears the selected files list, then resets the display textbox.",
+          "parameters": [],
+          "returns": "None"
+        }
+      ]
+    },
+    {
+      "name": "setup_view_page",
+      "description": "Builds the 'View Customers' page UI (search, table, edit/delete/export/history buttons) and wires actions.",
+      "parameters": [],
+      "returns": "None",
+      "callbacks": [
+        {
+          "name": "perform_search",
+          "description": "Filters customers by the search query and refreshes the table; updates a status label with result count.",
+          "parameters": [],
+          "returns": "None"
+        },
+        {
+          "name": "edit_customer",
+          "description": "Opens an edit modal for the selected customer; validates inputs; recalculates installment dates; updates or recreates the record; refreshes views.",
+          "parameters": [],
+          "returns": "None",
+          "children": [
+            {
+              "name": "save_changes",
+              "description": "Validates name/phone/amount/installments/date; computes per-month dates; updates existing or recreates the record; refreshes tree and payment history views.",
+              "parameters": [],
+              "returns": "None"
+            }
+          ]
+        },
+        {
+          "name": "delete_customer",
+          "description": "Confirms and deletes the selected customer; refreshes the table on success.",
+          "parameters": [],
+          "returns": "None"
+        }
+      ]
+    },
+    {
+      "name": "setup_manage_installments_page",
+      "description": "Builds the 'Manage Installments' page UI with a grouped customer/installments table and actions to refresh, mark as paid, and edit installments.",
+      "parameters": [],
+      "returns": "None",
+      "callbacks": [
+        {
+          "name": "load_data",
+          "description": "Loads customers and their installments into a grouped tree; sets tags and header toggle behavior.",
+          "parameters": [],
+          "returns": "None"
+        },
+        {
+          "name": "refresh_installments",
+          "description": "Reloads the data and shows a confirmation message.",
+          "parameters": [],
+          "returns": "None"
+        },
+        {
+          "name": "mark_as_paid",
+          "description": "Marks selected installment rows as paid via CSVManager, retagging rows and refreshing views.",
+          "parameters": [],
+          "returns": "None"
+        },
+        {
+          "name": "edit_installment",
+          "description": "Opens a modal to edit the selected installment date/value and paid status; validates inputs; updates CSV and refreshes views.",
+          "parameters": [],
+          "returns": "None"
+        }
+      ]
+    },
+    {
+      "name": "setup_backup_restore_page",
+      "description": "Builds the backup/restore UI, allowing users to create backups and restore from selected backup files.",
+      "parameters": [],
+      "returns": "None",
+      "callbacks": [
+        {
+          "name": "create_backup",
+          "description": "Creates a timestamped CSV backup via CSVManager and shows a result dialog.",
+          "parameters": [],
+          "returns": "None"
+        },
+        {
+          "name": "restore_backup",
+          "description": "Opens a modal listing backups with radio selection; on confirm, restores selected backup via CSVManager.",
+          "parameters": [],
+          "returns": "None",
+          "children": [
+            {
+              "name": "confirm_restore",
+              "description": "Validates selection and triggers restore; shows success/error and closes modal on success.",
+              "parameters": [],
+              "returns": "None"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setup_send_notification_page",
+      "description": "Builds the WhatsApp notifications UI to list upcoming installments, preview/customize a message, and send via pywhatkit with optional retries.",
+      "parameters": [],
+      "returns": "None",
+      "callbacks": [
+        {
+          "name": "load_data",
+          "description": "Loads upcoming (>= today) installments into the table and configures a 'sent' tag style.",
+          "parameters": [],
+          "returns": "None"
+        },
+        {
+          "name": "send_whatsapp_notification",
+          "description": "Opens a preview modal allowing message customization, retry options, then triggers sending.",
+          "parameters": [],
+          "returns": "None",
+          "children": [
+            {
+              "name": "send_message",
+              "description": "Applies template variables, sends via pywhatkit with retries/backoff, updates Notification Sent, and refreshes list.",
+              "parameters": [],
+              "returns": "None"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "check_due_installments",
+      "description": "Background loop that periodically scans customers and automatically sends WhatsApp reminders for installments due within a configured window.",
+      "parameters": [],
+      "returns": "None (infinite background loop with sleeps)",
+      "notes": "Uses pywhatkit sendwhatmsg_instantly with increased waits/close times; includes 2-retry logic with delays; updates Notified_Installments per installment when successful."
+    },
+    {
+      "name": "start_notification_thread",
+      "description": "Starts a daemon thread that runs the automated installment notification checker.",
+      "parameters": [],
+      "returns": "None"
+    },
+    {
+      "name": "setup_home_page",
+      "description": "Builds the dashboard/home page with navigation cards to all main sections.",
+      "parameters": [],
+      "returns": "None",
+      "callbacks": [
+        {
+          "name": "on_enter / on_leave",
+          "description": "Hover handlers that add/remove a white border around dashboard cards.",
+          "parameters": ["event"],
+          "returns": "None"
+        }
+      ]
+    },
+    {
+      "name": "refresh_payment_history_views",
+      "description": "Closes all open payment history windows to force a refresh on next open.",
+      "parameters": [],
+      "returns": "None"
+    },
+    {
+      "name": "load_installments_data",
+      "description": "Loads summarized installment progress per customer into the manage page's treeview, tagging paid/unpaid status.",
+      "parameters": [],
+      "returns": "None"
+    },
+    {
+      "name": "show_installment_details",
+      "description": "Opens a modal with all installments for the selected customer and actions to mark/unmark paid.",
+      "parameters": ["event"],
+      "returns": "None",
+      "callbacks": [
+        {
+          "name": "mark_as_paid",
+          "description": "Marks a selected installment as paid and refreshes the main manage view.",
+          "parameters": [],
+          "returns": "None"
+        },
+        {
+          "name": "unmark_as_paid",
+          "description": "Reverts a selected installment to unpaid and refreshes the main manage view.",
+          "parameters": [],
+          "returns": "None"
+        }
+      ]
+    },
+    {
+      "name": "perform_installment_search",
+      "description": "Filters the manage page view by name/phone and reloads summarized installment data.",
+      "parameters": [],
+      "returns": "None"
+    }
+  ],
+  "classes": [
+    {
+      "name": "StyleManager",
+      "description": "Centralized styling factory for CustomTkinter and ttk widgets (colors, fonts, and builder helpers).",
+      "methods": [
+        {
+          "name": "setup_theme",
+          "description": "Sets dark appearance, configures ttk.Treeview styles and selection colors.",
+          "parameters": ["cls"],
+          "returns": "None"
+        },
+        {
+          "name": "create_frame",
+          "description": "Creates a styled CTkFrame with default surface background and rounded corners.",
+          "parameters": ["cls", "master", "kwargs"],
+          "returns": "CTkFrame"
+        },
+        {
+          "name": "create_button",
+          "description": "Creates a styled CTkButton using predefined style variants (primary, secondary, danger).",
+          "parameters": ["cls", "master", "text", "style", "kwargs"],
+          "returns": "CTkButton"
+        },
+        {
+          "name": "create_label",
+          "description": "Creates a styled CTkLabel with default font and text color unless overridden.",
+          "parameters": ["cls", "master", "text", "font_style", "kwargs"],
+          "returns": "CTkLabel"
+        },
+        {
+          "name": "create_entry",
+          "description": "Creates a styled CTkEntry with themed colors and border, default body font unless overridden.",
+          "parameters": ["cls", "master", "kwargs"],
+          "returns": "CTkEntry"
+        }
+      ]
+    },
+    {
+      "name": "FileManager",
+      "description": "Manages per-customer document files (directory creation, add, list, delete, and open).",
+      "methods": [
+        {
+          "name": "__init__",
+          "description": "Initializes with a base directory and ensures it exists.",
+          "parameters": ["self", "base_dir"],
+          "returns": "None"
+        },
+        {
+          "name": "_ensure_base_directory",
+          "description": "Creates the base directory if it does not exist.",
+          "parameters": ["self"],
+          "returns": "None"
+        },
+        {
+          "name": "_get_customer_dir",
+          "description": "Returns/creates a sanitized subdirectory path for the given customer name.",
+          "parameters": ["self", "customer_name"],
+          "returns": "Absolute directory path string"
+        },
+        {
+          "name": "add_files",
+          "description": "Copies provided files into the customer's directory with unique filenames on conflicts.",
+          "parameters": ["self", "customer_name", "files"],
+          "returns": "True if all copies attempted succeed; False if any fail"
+        },
+        {
+          "name": "get_files",
+          "description": "Lists files for the specified customer.",
+          "parameters": ["self", "customer_name"],
+          "returns": "List of filenames (strings)"
+        },
+        {
+          "name": "delete_file",
+          "description": "Deletes a specific file for the customer if it exists.",
+          "parameters": ["self", "customer_name", "file_name"],
+          "returns": "True if removed; else False"
+        },
+        {
+          "name": "delete_customer_files",
+          "description": "Deletes the entire directory of the customer's files.",
+          "parameters": ["self", "customer_name"],
+          "returns": "True if deleted; else False"
+        },
+        {
+          "name": "open_file",
+          "description": "Opens a customer file with the system default application.",
+          "parameters": ["self", "customer_name", "file_name"],
+          "returns": "True if opened; else False"
+        }
+      ]
+    },
+    {
+      "name": "CSVManager",
+      "description": "Encapsulates all CSV I/O, validation, caching, backups, and installment state updates.",
+      "methods": [
+        {
+          "name": "__init__",
+          "description": "Configures CSV path, backup folder, column schema, cache, and ensures files/folders exist.",
+          "parameters": ["self", "csv_file", "backup_folder"],
+          "returns": "None"
+        },
+        {
+          "name": "_is_cache_valid",
+          "description": "Checks if in-memory cache is fresh within the cache duration.",
+          "parameters": ["self"],
+          "returns": "True if valid; else False"
+        },
+        {
+          "name": "_update_cache",
+          "description": "Replaces the internal cache with provided data and timestamps it.",
+          "parameters": ["self", "data"],
+          "returns": "None"
+        },
+        {
+          "name": "read_data",
+          "description": "Reads and cleans CSV rows into dictionaries; uses cache when valid.",
+          "parameters": ["self"],
+          "returns": "List of customer dicts"
+        },
+        {
+          "name": "_clean_row_data",
+          "description": "Normalizes a CSV row (phone format, numeric parsing, boolean flags, default fields).",
+          "parameters": ["self", "row"],
+          "returns": "Cleaned row dict"
+        },
+        {
+          "name": "save_data",
+          "description": "Validates rows, creates a backup, writes the file with headers, and refreshes cache.",
+          "parameters": ["self", "data"],
+          "returns": "True on success; else False"
+        },
+        {
+          "name": "_validate_row",
+          "description": "Ensures required fields, correct numeric/phone formats, and default optional fields.",
+          "parameters": ["self", "row"],
+          "returns": "True if valid; else False"
+        },
+        {
+          "name": "_ensure_files_exist",
+          "description": "Ensures backup directory and CSV file are present (creating if missing).",
+          "parameters": ["self"],
+          "returns": "None"
+        },
+        {
+          "name": "_create_empty_csv",
+          "description": "Creates an empty CSV with the expected header row.",
+          "parameters": ["self"],
+          "returns": "None"
+        },
+        {
+          "name": "append_customer",
+          "description": "Appends a new customer row (creates header if file is empty) after backing up.",
+          "parameters": ["self", "customer_data"],
+          "returns": "True on success; else False"
+        },
+        {
+          "name": "update_customer",
+          "description": "Updates an existing customer by name, preserving notification/paid/value fields.",
+          "parameters": ["self", "name", "updated_data"],
+          "returns": "True on success; else False"
+        },
+        {
+          "name": "delete_customer",
+          "description": "Removes a customer by name and saves.",
+          "parameters": ["self", "name"],
+          "returns": "True on success; else False"
+        },
+        {
+          "name": "create_backup",
+          "description": "Copies the current CSV to the backups folder with a timestamped name.",
+          "parameters": ["self"],
+          "returns": "Backup file path string on success; else null"
+        },
+        {
+          "name": "restore_backup",
+          "description": "Restores the main CSV from a selected backup file and clears caches.",
+          "parameters": ["self", "backup_file"],
+          "returns": "True on success; else False"
+        },
+        {
+          "name": "get_backup_files",
+          "description": "Lists available backup CSV files (sorted newest first).",
+          "parameters": ["self"],
+          "returns": "List of backup filenames"
+        },
+        {
+          "name": "search_customers",
+          "description": "Case-insensitive substring search across all customer fields.",
+          "parameters": ["self", "query"],
+          "returns": "List of matching customer dicts"
+        },
+        {
+          "name": "mark_installment_as_paid",
+          "description": "Adds a date to a customer's Paid_Installments and saves.",
+          "parameters": ["self", "customer_name", "installment_date"],
+          "returns": "True on success; else False"
+        },
+        {
+          "name": "get_payment_status",
+          "description": "Checks whether a specific installment date is marked paid for a customer.",
+          "parameters": ["self", "customer_name", "installment_date"],
+          "returns": "True if paid; else False"
+        },
+        {
+          "name": "update_installment",
+          "description": "Changes an installment's date/value, updates paid mapping accordingly, and saves.",
+          "parameters": ["self", "customer_name", "old_date", "new_date", "new_value"],
+          "returns": "True on success; else False"
+        },
+        {
+          "name": "unmark_installment_as_paid",
+          "description": "Removes a date from a customer's Paid_Installments and saves.",
+          "parameters": ["self", "customer_name", "installment_date"],
+          "returns": "True on success; else False"
+        }
+      ]
+    },
+    {
+      "name": "DatePicker",
+      "description": "A modal CTkToplevel window embedding a tkcalendar.Calendar to select a date into an associated entry field.",
+      "methods": [
+        {
+          "name": "__init__",
+          "description": "Builds the calendar UI with themed colors and action buttons, and grabs focus (modal).",
+          "parameters": ["self", "parent", "entry_widget"],
+          "returns": "None"
+        },
+        {
+          "name": "select_date",
+          "description": "Writes the selected date to the bound entry widget and closes the window.",
+          "parameters": ["self"],
+          "returns": "None"
+        }
+      ]
+    }
+  ],
+  "important_variables": [
+    {
+      "name": "logs_dir",
+      "description": "Directory path for application log files (default 'logs')."
+    },
+    {
+      "name": "app",
+      "description": "Global CTk application instance."
+    },
+    {
+      "name": "frames",
+      "description": "Global dict mapping page names to their CTkFrame instances."
+    },
+    {
+      "name": "file_manager",
+      "description": "Global FileManager instance rooted at 'customer_files' for per-customer documents."
+    },
+    {
+      "name": "csv_filename",
+      "description": "CSV file name for persisted customer data (default 'customers.csv')."
+    },
+    {
+      "name": "backup_folder",
+      "description": "Folder path for timestamped CSV backups (default 'backups')."
+    },
+    {
+      "name": "csv_manager",
+      "description": "Global CSVManager instance that handles all CSV/backups/cache operations."
+    },
+    {
+      "name": "console_handler",
+      "description": "Logging handler that writes logs to stdout with DEBUG level."
+    },
+    {
+      "name": "formatter",
+      "description": "Console logging formatter specifying timestamp, level, and message pattern."
+    },
+    {
+      "name": "StyleManager.COLORS/FONTS/BUTTON_STYLES",
+      "description": "Class-level theming dictionaries for consistent colors, fonts, and button styles."
+    }
+  ],
+  "external_dependencies": [
+    "customtkinter: Modern themed Tkinter widgets (CTk, CTkFrame, CTkButton, etc.) for UI.",
+    "tkinter (messagebox, ttk, StringVar, BooleanVar, filedialog, TclError, tk): Core UI components, dialogs, variables, and ttk.Treeview.",
+    "re: Regular expressions for input validation (phone, amounts, etc.).",
+    "csv: Reading/writing CSV for customer data persistence.",
+    "os: Filesystem paths, directory creation, file listing, and process-level utilities.",
+    "pandas as pd: DataFrame transformation for Excel export.",
+    "datetime (datetime, timedelta): Date parsing/formatting and schedule computations.",
+    "tkcalendar.Calendar: Date picker widget embedded in modal selection window.",
+    "shutil: File copy operations for backups and file attachments.",
+    "threading: Background daemon thread for automated notifications.",
+    "pywhatkit as kit: Sending WhatsApp messages programmatically.",
+    "logging: Structured logging to file and console.",
+    "typing (List, Dict, Optional, Union): Type hints for method signatures.",
+    "time: Sleep/backoff delays and pacing in background tasks.",
+    "sys: Access to stdout for console logging and exit on critical errors.",
+    "traceback: Include stack traces in critical error logs.",
+    "xlsxwriter (via pandas ExcelWriter engine): Excel formatting and styling during export."
+  ]
+}
+
+
