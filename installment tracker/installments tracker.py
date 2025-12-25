@@ -37,9 +37,9 @@ formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 console_handler.setFormatter(formatter)
 logging.getLogger().addHandler(console_handler)
 
-# Global variables
 app = None
 frames = {}
+notification_enabled = False  # Paused notifications
 
 class StyleManager:
     """Manages application-wide styling"""
@@ -3097,10 +3097,11 @@ def setup_send_notification_page():
         ).pack(pady=(20, 10))
         
         # Default message template
-        default_message = (
-            f"مرحبًا {name},\n"
-            f"تذكير بدفع قسط بقيمة {installment_value} ريال في تاريخ {installment_date}.\n"
-            f"شكرًا لتعاملك معنا!"
+        default_message =  (
+         f"مرحبًا {name},\n"
+            f"هذه الرسالة مجرد تذكير لدفع الالتزام الخاص بك على حساب الشركة :\n"
+            f"QA80QISB000000000155537130012\n"
+            f"شكرًا لتعاملك مع شركة الحلول المتطورة للتجارة""."
         )
         
         # Message customization section
@@ -3134,7 +3135,12 @@ def setup_send_notification_page():
         
         StyleManager.create_label(
             template_info,
-            text="{name} - اسم العميل\n{date} - تاريخ القسط\n{value} - قيمة القسط",
+            text=  (
+         f"مرحبًا {name},\n"
+            f"هذه الرسالة مجرد تذكير لدفع الالتزام الخاص بك على حساب الشركة :\n"
+            f"QA80QISB000000000155537130012\n"
+            f"شكرًا لتعاملك مع شركة الحلول المتطورة للتجارة""."
+        ),
             font_style="small",
             text_color=StyleManager.COLORS["text_secondary"]
         ).pack(anchor="w")
@@ -3334,6 +3340,9 @@ def setup_send_notification_page():
 def check_due_installments():
     """Check for installments due in 3 days and send notifications."""
     while True:
+        if not notification_enabled:
+            time.sleep(60 * 60)
+            continue
         try:
             logging.info("Starting automatic installment check")
             
